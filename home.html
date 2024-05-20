@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EESA</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+      <a href="home.html">
+			  <img src="logo.png" alt="EESA Logo" height=60px>
+      </a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="others.html">OTHERS</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="EESA">
+		<h1>Welcome to EESA</h1>
+		<p>The Electrical Engineering Students Association</p>
+	</section>
+    <div class="slideshow">
+        <button class="prev">&#9664;</button>
+        <img src="Slideshow Images/image1.jpeg" alt="Image 1">
+        <img src="Slideshow Images/image2.jpeg" alt="Image 2">
+        <img src="Slideshow Images/image3.jpeg" alt="Image 3">
+        <button class="next">&#9654;</button>
+    </div>
+
+    <div class="council-members-title">
+        <h2 class="title">COUNCIL MEMBERS</h2>
+    </div>
+
+      <div class="gallery">
+        <div class="hexagon-container">
+          <div class="hexagon">
+            <img src="Council Members/council-member-1.jpg" alt="Council Member 1">
+          </div>
+          <div class="info-box">
+            <div class="name">Saarthak Laturiya</div>
+            <div class="designation">Joint Secretary</div>
+          </div>
+        </div>
+        <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-2.jpg" alt="Council Member 2">
+            </div>
+            <div class="info-box">
+              <div class="name">Nimay Upen Shah</div>
+              <div class="designation">Joint Secretary</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-3.jpg" alt="Council Member 3">
+            </div>
+            <div class="info-box">
+              <div class="name">Saatwik Patnaik</div>
+              <div class="designation">Sports Secretary UG</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-4.jpg" alt="Council Member 4">
+            </div>
+            <div class="info-box">
+              <div class="name">Dishant Yadav</div>
+              <div class="designation">Web Secretary</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-5.jpg" alt="Council Member 5">
+            </div>
+            <div class="info-box">
+              <div class="name">Anisha Saini</div>
+              <div class="designation">Design Secretary</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-6.jpg" alt="Council Member 6">
+            </div>
+            <div class="info-box">
+              <div class="name">Saima Faiyaz Patharwat</div>
+              <div class="designation">Design Secretary</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-7.jpg" alt="Council Member 7">
+            </div>
+            <div class="info-box">
+              <div class="name">Garima Gopalani</div>
+              <div class="designation">Design Secretary</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-8.jpg" alt="Council Member 8">
+            </div>
+            <div class="info-box">
+              <div class="name">Pravesh khaparde</div>
+              <div class="designation">Media Secretary</div>
+            </div>
+          </div>
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <img src="Council Members/council-member-9.jpg" alt="Council Member 9">
+            </div>
+            <div class="info-box">
+              <div class="name">Amol Pagare</div>
+              <div class="designation">Media Secretary</div>
+            </div>
+          </div>
+        </div>
+
+    <script>
+        const slideshow = document.querySelector('.slideshow');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const slides = slideshow.querySelectorAll('img');
+        let currentSlide = 0;
+
+        function goToSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                slide.style.transform = 'translateX(0)';
+                } else {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+                }
+            });
+            currentSlide = index;
+        }
+
+        prevButton.addEventListener('click', () => {
+            goToSlide((currentSlide - 1 + slides.length) % slides.length);
+        });
+
+        nextButton.addEventListener('click', () => {
+            goToSlide((currentSlide + 1) % slides.length);
+        });
+
+        goToSlide(currentSlide);
+    </script>
+	<footer class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com/eesa_iitb/?igshid=5r5dmf7jpgp7" target="_blank" rel="noopener noreferrer">
+        <img src="Icons/instagram-icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/company/eesa-iit-bombay/" target="_blank" rel="noopener noreferrer">
+        <img src="Icons/linkedin-icon.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.youtube.com/channel/UCXbd9Rw-nbI4QrEDeFK2Hgg" target="_blank" rel="noopener noreferrer">
+        <img src="Icons/youtube-icon.png" alt="YouTube">
+      </a>
+      <a href="https://www.facebook.com/eesa.ee.iitbombay/" target="_blank" rel="noopener noreferrer">
+        <img src="Icons/facebook-icon.png" alt="Facebook">
+      </a>
+    </div>
+    <p>&copy; 2024 EESA. All rights reserved.</p>
+  </footer>
+</body>
+</html>

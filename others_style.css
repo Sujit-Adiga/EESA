@@ -1,0 +1,247 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e00cedf;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: #3e00cedf;
+	color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+}
+
+header.logo {
+	margin-left: 20px;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+    font-size: larger;
+}
+
+header nav ul li a:hover {
+	background-color: #111;
+}
+
+.filler{
+    height: 100px; 
+    color: #3e00cedf;   
+}
+
+  .table-title {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #000000;
+    padding: 0.5rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #3e00cedf;    
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .important-links-table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .important-links-table th,
+  .important-links-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    font-size: large;
+    text-align: left;
+  }
+  
+  .important-links-table th {
+    background-color: #000;
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+  }
+
+  .important-links-table td {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .important-links-table a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .important-links-table a:hover {
+    text-decoration: underline;
+  }
+
+  .important-links-table tr:nth-child(even) {
+    background-color: #8e6ddbb6;
+  }
+
+  .important-links-table tr:nth-child(odd) {
+    background-color: #513c849a;
+  }
+  
+  @media (max-width: 768px) {
+    .important-links-table {
+      display: block;
+    }
+  
+    .important-links-table th,
+    .important-links-table td {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .important-links-table th {
+      background-color: #333;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+  
+    .important-links-table td:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  
+    .important-links-table a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .blogs-title {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #000000;
+    padding: 0.5rem;
+  }
+
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #5520d2df;
+    padding: 20px;
+  }
+  
+  .blog-box {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .blog-text {
+    padding: 15px;
+  }
+  
+  .blog-title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-emphasis: none;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .blog-description {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-links {
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+    padding: 0;
+  }
+  
+  .social-links a:hover {
+    opacity: 0.8;
+  }
+  
+  .social-links a img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+  }
